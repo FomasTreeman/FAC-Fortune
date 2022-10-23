@@ -1,0 +1,61 @@
+body {
+    background-color: purple;
+}
+
+* {
+    text-align: center;
+}
+
+header {
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3rem;
+}
+
+img {
+    max-height: 35vh;
+    padding-right: 20px;
+}
+
+#img1 {
+    animation: rumble 0.5s infinite;
+}
+
+#img2 {
+    animation-name: bounceIn;
+    animation-duration: 0.5s;
+}
+
+#hidden {
+    display: none;
+}
+
+input {
+    margin-top: 10vh;
+}
+
+@keyframes rumble {
+    0% {
+        transform: rotate(25deg);
+    }
+
+    50% {
+        transform: rotate(-25deg);
+    }
+
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+@keyframes bounceIn {
+    0% { 
+       opacity: 0; 
+       transform: scale(.3);
+    }
+    100% { 
+       opacity: 1;
+       transform: scale(1);
+    }
+    
+ } 
